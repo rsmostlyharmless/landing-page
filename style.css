@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex: auto;
+}
+
+.container1 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    background-image: url(../landing-page/img/deadpool-logo.png);
+    background-repeat: no-repeat;
+    height: 645px;
+}
+
+.image1 {
+    height: auto;
+    width: 120px;
+    margin: 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    gap: 15px;
+}
+
+a {
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: beige;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    margin: 100px;
+}
+
+.child1 {
+    display: flex;
+    flex-direction: column;
+    color: beige;
+}
+
+.h1 {
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: beige underline;
+    margin: 0px;
+    width: 560px;
+}
+
+.h-text {
+    text-align: end;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 550px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.image2 {
+    height: 250px;
+    width: auto;
+    margin: 5px;
+}
+
+.button1 {
+    width: 120px;
+}
