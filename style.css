@@ -73,6 +73,32 @@ a {
     margin: 5px;
 }
 
-.button1 {
-    width: 120px;
+button {
+    background-color: rgb(255, 105, 180);
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: beige;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: rgb(255, 105, 180);
+        box-shadow: 0 0 5px rgb(255, 105, 180);
+    }
+    50% {
+        background-color: rgb(250, 208, 229);
+        box-shadow: 0 0 20px rgb(250, 208, 229);
+    }
+    100% {
+        background-color: rgb(255, 105, 180);
+        box-shadow: 0 0 5px rgb(255, 105, 180);
+    }
 }
