@@ -1,7 +1,8 @@
 body {
     display: flex;
     flex: auto;
-    margin: auto;
+    flex-direction: column;
+    margin: 0px;
 }
 
 .container1 {
@@ -34,7 +35,18 @@ body {
 a {
     font-size: 22px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: beige;
+}
+
+.link1 {
+    color: aqua;
+}
+
+.link2 {
+    color: darkolivegreen;
+}
+
+.link3 {
+    color: darkslateblue;
 }
 
 .box1 {
@@ -72,9 +84,10 @@ a {
     height: 250px;
     width: auto;
     margin: 5px;
+    border-radius: 100px;
 }
 
-button {
+.button1 {
     background-color: rgb(255, 105, 180);
     border-radius: 60px;
     border: none;
@@ -102,4 +115,45 @@ button {
         background-color: rgb(255, 105, 180);
         box-shadow: 0 0 5px rgb(255, 105, 180);
     }
+}
+
+.body {
+    display: flex;
+    flex: 1;
+    background-image: url(../landing-page/img/deadpool-bear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container2 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    max-width: initial;
+}
+
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.child2 {
+    display: flex;
+    gap: 45px;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 300px;
+}
+
+.image3 {
+    width: 300px;
+    height: 300px;
 }
