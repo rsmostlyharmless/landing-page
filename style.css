@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex: auto;
+    margin: auto;
 }
 
 .container1 {
