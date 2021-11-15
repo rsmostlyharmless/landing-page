@@ -1,9 +1,6 @@
 body {
-    display: flex;
-    flex: auto;
-    flex-direction: column;
+    display: block;
     margin: 0px;
-    content: layout;
 }
 
 .container1 {
@@ -139,6 +136,15 @@ a {
     justify-content: center;
     align-items: center;
     height: 600px;
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: beige;
+    font-size: 30px;
+    text-decoration: underline beige;
+    height: 50px;
+
 }
 
 .child2 {
