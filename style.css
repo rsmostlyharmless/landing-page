@@ -3,6 +3,7 @@ body {
     flex: auto;
     flex-direction: column;
     margin: 0px;
+    content: layout;
 }
 
 .container1 {
@@ -11,6 +12,7 @@ body {
     flex-direction: column;
     background-image: url(../landing-page/img/deadpool-logo.png);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 645px;
 }
 
@@ -51,6 +53,7 @@ a {
 
 .box1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 500px;
@@ -118,20 +121,17 @@ a {
 }
 
 .body {
-    display: flex;
-    flex: 1;
     background-image: url(../landing-page/img/deadpool-bear.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container2 {
-    display: flex;
+    display: inline-flex;
     flex: auto;
     flex-direction: column;
-    max-width: initial;
+    width: -webkit-fill-available;
 }
-
 
 .box2 {
     display: flex;
@@ -143,17 +143,22 @@ a {
 
 .child2 {
     display: flex;
-    gap: 45px;
+    flex-wrap: wrap;
+    gap: 50px;
     margin: 20px;
 }
 
 .card {
     display: flex;
+    flex: 1;
     flex-direction: column-reverse;
-    max-width: 300px;
+    position: inherit;
+    width: 300px;
 }
 
 .image3 {
     width: 300px;
-    height: 300px;
+    height: auto;
+    border-radius: 40px;
 }
+
