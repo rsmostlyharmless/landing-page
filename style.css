@@ -1,6 +1,9 @@
 body {
-    display: block;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
     margin: 0px;
+
 }
 
 .container1 {
@@ -10,7 +13,6 @@ body {
     background-image: url(../landing-page/img/deadpool-logo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%;
     width: 100%;
     height: 645px;
 }
@@ -126,28 +128,27 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: auto;
 }
 
 .container2 {
-    display: inline-flex;
+    display: flex;
     flex: auto;
     flex-direction: column;
     width: -webkit-fill-available;
 }
 
 .box2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     height: 600px;
 }
 
 h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: beige;
-    font-size: 30px;
-    text-decoration: underline beige;
+    color: aqua;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline aqua;
     height: 50px;
 
 }
@@ -155,21 +156,91 @@ h3 {
 .child2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 50px;
     margin: 20px;
 }
 
 .card {
-    display: flex;
-    flex: 1;
-    flex-direction: column-reverse;
-    position: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
     width: 300px;
 }
 
 .image3 {
-    width: 300px;
+    width: inherit;
     height: auto;
     border-radius: 40px;
 }
 
+figcaption {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aqua;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+}
+
+blockquote {
+    font-size: 60px;
+    color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 800px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+}
+
+.box3 {
+    background-image: url(../landing-page/img/i-wanna-be-you.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+}
+
+.text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    color: yellow;
+}
+
+.button2 {
+    background-color: yellow;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: rgb(255, 255, 0);
+        box-shadow: 0 0 5px rgb(255, 255, 0);
+    }
+    50% {
+        background-color: rgb(255, 255, 163);
+        box-shadow: 0 0 20px rgb(255, 255, 163);
+    }
+    100% {
+        background-color: rgb(255, 255, 0);
+        box-shadow: 0 0 5px rgb(255, 255, 0);
+    }
+}
