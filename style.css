@@ -2,6 +2,7 @@ body {
     display: flex;
     flex: auto;
     flex-direction: column;
+    max-height: 100vh;
     margin: 0px;
 
 }
@@ -108,6 +109,7 @@ a {
     animation: glowing 1300ms infinite;
 }
 
+
 @keyframes glowing {
     0% {
         background-color: rgb(255, 105, 180);
@@ -136,11 +138,12 @@ a {
     flex: auto;
     flex-direction: column;
     width: -webkit-fill-available;
+    gap: 10px;
 }
 
 .box2 {
     display: inline-block;
-    height: 600px;
+    height: auto;
 }
 
 h3 {
@@ -154,7 +157,7 @@ h3 {
 }
 
 .child2 {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 50px;
@@ -181,11 +184,11 @@ figcaption {
 }
 
 .container3 {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin: 1em;
     height: 350px;
-    width: 100%;
 }
 
 blockquote {
@@ -216,7 +219,7 @@ blockquote {
 }
 
 .button2 {
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
     border-radius: 60px;
     border: none;
     cursor: pointer;
@@ -227,10 +230,10 @@ blockquote {
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    animation: glowing 1300ms infinite;
+    animation: signal 1300ms infinite;
 }
 
-@keyframes glowing {
+@keyframes  signal {
     0% {
         background-color: rgb(255, 255, 0);
         box-shadow: 0 0 5px rgb(255, 255, 0);
