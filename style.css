@@ -2,7 +2,7 @@ body {
     display: flex;
     flex: auto;
     flex-direction: column;
-    max-height: 100vh;
+    max-width: 100%;
     margin: 0px;
 
 }
@@ -14,7 +14,6 @@ body {
     background-image: url(../landing-page/img/deadpool-logo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: 645px;
 }
 
@@ -143,7 +142,7 @@ a {
 
 .box2 {
     display: inline-block;
-    height: auto;
+    margin: auto;
 }
 
 h3 {
@@ -157,9 +156,8 @@ h3 {
 }
 
 .child2 {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 50px;
     margin: 20px;
 }
@@ -178,7 +176,7 @@ h3 {
 }
 
 figcaption {
-    font-size: 18px;
+    font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aqua;
 }
@@ -208,14 +206,22 @@ blockquote {
     background-image: url(../landing-page/img/i-wanna-be-you.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 20px;
     width: 800px;
-    height: 500px;
+    height: 450px;
+}
+
+.child3 {
+    display: flex;
+    justify-content: center;
+    margin: 18px;
 }
 
 .text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
     color: yellow;
+    margin: 12px;
 }
 
 .button2 {
@@ -225,11 +231,11 @@ blockquote {
     cursor: pointer;
     display: inline-block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 22px;
     color: black;
-    padding: 10px;
+    padding: 8px;
+    margin-left: 20px;
     text-align: center;
-    text-decoration: none;
     animation: signal 1300ms infinite;
 }
 
@@ -246,4 +252,17 @@ blockquote {
         background-color: rgb(255, 255, 0);
         box-shadow: 0 0 5px rgb(255, 255, 0);
     }
+}
+
+.container5 {
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+    background-color: darkred;
+    color: beige;
+}
+
+.footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
 }
